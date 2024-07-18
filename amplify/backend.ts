@@ -8,9 +8,14 @@ export const backend = defineBackend({
 });
 
 
+// backend.data.addHttpDataSource(
+//   "MyMongoDBDataSource",
+//   "https://data.mongodb-api.com"
+// );
+
 backend.data.addHttpDataSource(
   "MyMongoDBDataSource",
-  "https://data.mongodb-api.com"
+  "https://ap-south-1.aws.data.mongodb-api.com"
 );
 
 backend.data.resources.cfnResources.cfnGraphqlApi.environmentVariables = {
